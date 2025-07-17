@@ -1,1 +1,18 @@
 
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'download code for github'
+            }
+    }
+    stage('aarti') {
+        steps {
+            echo "convert this code into.war format"
+            echo "testing"
+        }
+    }       
+    }
+}
